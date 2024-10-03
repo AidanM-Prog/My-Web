@@ -6,8 +6,8 @@
 
 /* The sidepanel menu */
 .sidepanel {
-    height: 100%; /* Specify a height */
-    width: 0; /* 0 width - change this with JavaScript */
+    height: 10%; /* Specify a height */
+    width: 100%; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
     top: 0;
@@ -21,11 +21,11 @@
   /* The sidepanel links */
 .sidepanel a {
     padding: 8px 8px 8px 32px;
+    position: relative;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
-    display: block;
-    transition: 0.3s;
+    transition: 1s;
 }
   
   /* When you mouse over the navigation links, change their color */
@@ -36,7 +36,7 @@
   /* Position and style the close button (top right corner) */
 .sidepanel .closebtn {
     position: absolute;
-    top: 0;
+    top: 10;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
@@ -56,9 +56,14 @@
     background-color: #444;
 }
 
+#links {
+  top: -60px;
+}
+
 .profile {
     width: 100px;
     height: 100px;
     margin-left: 20px;
+    margin-top: -50px;
     border-radius: 50%;
 }
